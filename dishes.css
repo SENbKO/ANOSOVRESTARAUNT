@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 25px;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.header{
+    background-color: rgb(226, 202, 173);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    position: relative;
+    width: 100vw;
+    height: 60px;
+    z-index: 3;
+}
+.header a{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: none;
+    color: #5A440D;
+    transition: opasity 0.25s;
+}
+.header a:hover{
+    opacity: 0.7;
+}
+.header .menu{
+    cursor: default;
+    color:  #2e343b90;
+}
+.header .menu:hover{
+    opacity: 1;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 77px;
+    background-color: lightgray;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: 50px 100px 100px 100px 100px;
+    row-gap: 40px;
+}
+.sidebar a{
+    text-decoration: none;
+}
+.sidebar a:hover{
+    opacity: 0.5;
+}
+.sidebar-link{
+    font-size: 13px;
+    color: #2E343B;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sidebar-link img{
+    width: 70%;
+    height: 50%;
+    margin-bottom: 10px;
+}
+.main-page{
+    margin-left: 77px;
+    margin-top: 70px;
+}
+.paragraph{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    flex: 1;
+}
+.column img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.column h3{
+    margin-top: 20px;
+    text-align: center;
+}
+.column p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.column .description{
+    font-size: 14px;
+    color: rgb(16, 132, 132);
+}
+.column ol{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.column li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.heading{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(255, 115, 0);
+    margin-bottom: 70px;
+}
